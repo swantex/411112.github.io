@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en"> <!-- lang is important for devices with different language settings. -->
+	<head>
+		<title>amir | contact</title> <!-- page title -->
+		<meta name="viewport" content="width=device-width"> <!-- content must be "," separated. initial-scale=1 -->
+		<meta name="description" content="contact amir.">
+		<link rel="stylesheet" href="./stylesheet.css"> <!-- linking the stylesheet -->
+		<meta name="apple-mobile-web-app-capable" content="yes"> <!-- make pwa like native ios apps -->
+		<link rel="apple-touch-icon" href="/favicon.ico"> <!-- ios app icon -->
+	</head>
+	<body>
+		<article> <!-- there is just an article on this page. -->
+			<img id="amir" ondblclick="handleQrCode()" src="../media/amir.webp" alt="amir" height="100" width="100">
+			<hr color="#111111" /> <!-- a horizontal line after img and before the main -->
+			<p> amir <br />
+			self-educator & tech enthusiast <br />
+			<span id="gpg">C182 6531 F0F3 1229 1A46 1373 479E C0B4 C6FD 024B</span>
+			</p>
+			<p id="media">
+				<!-- twitter svg and link -->
+				<a class="media" href="https://twitter.com/0x411112" target="_blank">
+					<img src="../media/svg/twitter.svg" alt="twitter" /></a>
+				<!-- mail svg within link  -->
+				<a class="media" href="mailto:0x411112@skiff.com" target="_blank">
+					<img src="../media/svg/envelope-solid.svg" alt="mail" /></a>
+				<!-- contact card -->
+				<a class="media" href="../media/amir.vcf">
+					<img src="../media/svg/id-card-solid.svg" alt="vcard" /></a>
+				<!-- github svg within link -->
+				<a class="media" href="https://github.com/411112" target="_blank">
+					<img src="../media/svg/github.svg" alt="github" /></a>
+			</p>
+		</article>
+		<script src="../js/qr-code.js"></script>
+	</body>
+</html>

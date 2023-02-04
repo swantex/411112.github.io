@@ -1,0 +1,103 @@
+:root {
+	/* color palette */
+	--black: #111111;
+	--white: #EEEEEE;
+	--background: #222222;
+	--cardbg: #DDDDDD;
+}
+
+html {
+	/* size */
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	font-size: 100%;
+}
+
+body {
+	/* size and position */	
+	width: 90% !important; /* important. change from 90vw */
+	min-height: 90vh !important; /* check this line again. */
+	padding: 3vh 3vw; /* changed from vh vw */
+	margin: auto;
+
+	/* color */
+	background-color: var(--background);
+	background-image: url(../media/svg/pattern.svg);
+	background-size: 10vw 10vw;
+	
+	/* font */
+	font-family: Arial; /* font of all element of page */
+	font-size: 1rem; 
+	line-height: 2rem;
+	-webkit-text-size-adjust: 100%;
+}
+
+article { /* parent: body; sibling: none; children: img#amir hr p p#media;
+	
+	/* size and position */
+	width: 80%; /* change from 80vw */
+	max-width: 720px;
+	min-height: 50vh;
+	max-height: 720px;
+	margin: auto; /* find the best solution. *//**/
+	padding: 3vh 3vw; /* find the right vh and vw */
+	position: absolute; /* ver & hor align. 1/4 */
+	top: 50%; /* ver & hor align. 2/4 */
+	left: 50%; /* ver & hor align. 3/4 */
+	transform: translate(-50%, -50%); /* ver & hor align. 4/4. */
+
+	/* color */
+	background-color: var(--cardbg); /* card-background color from palette. */
+	color: var(--black); /* black color for text. */
+	text-align: justify; /* justify text. */
+
+	/* shadow */
+	box-shadow: 1em 1em 1em var(--black);
+}
+
+#amir { /* or img#amir. first child of article. siblings: hr p p#media; */
+	
+	/* size and position */
+	width: 5vw;
+	height: 5vw;
+	min-width: 2.5rem;
+	min-height: 2.5rem;
+	margin: auto;
+	display: block;
+}
+
+article a , p { /* select all links within article and all p elemetns. */
+	text-align: center;
+}
+
+a img { /* select all img inside a elements. or .media */
+	
+	/* size & position */
+	display: inline-block;
+	width: 2vw;
+	min-width: 1rem;
+	height: 2vw;
+	min-height: 1rem;
+	padding: 0;
+	margin: 1vw;
+}
+
+#gpg {
+	font-size: calc(0.4rem + 0.5vw);
+}
+
+/* lower part of card.
+/* select p#media. last child of article. siblings: img#amir hr p;
+children: some a.media & a#button; */
+#media {
+	/* size & position */
+	display: inline-block;
+	position: fixed;
+	left: 50%;
+	bottom: 0vh;
+	transform: translate(-50%);
+
+	/* text */
+	text-decoration: none;
+}

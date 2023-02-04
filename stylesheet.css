@@ -1,0 +1,82 @@
+:root {
+	/* color palette */
+	--black: #000000;
+	--background: #222222;
+	--paperbg: #DDDDDD;
+	--white: #EEEEEE;
+}
+
+html {
+	/* size */
+	height: 100%; /* changed from 100vh to 100% */
+	width: 100%; /* check */
+	max-width: 100%; /* check */
+	font-size: 100%;
+}
+
+body {
+	/* size and position */
+	min-height: 90vh !important;
+	width: 90% !important; /* important. change from 90vw */
+	margin: auto;
+	padding: 3vh 3vw; /* changed from vh vw */
+
+	/* text and font */
+	font-family: 'Courier New', monospace;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	-webkit-text-size-adjust: 100%;
+
+	/* color */
+	background-color: var(--background);
+	background-image: url(media/svg/pattern.svg);
+	background-size: 10vw 10vw;
+}
+
+/* this page only has content on this element. */
+article {
+	/* size & position */
+	width: 80%; /* change from 80vw */
+	min-height: 70vh;
+	max-height: 70vh;
+	margin: 1vh auto;
+	padding: 1vw 1vh; /* default 3vw 3vh */
+
+	overflow: scroll;
+
+	/* font and text */
+	text-align: justify;
+	/*white-space: pre; /* added to act like pre tag */
+
+	/* color */
+	background-color: var(--black);
+	color: var(--white);
+}
+
+a {
+	color: green;
+	white-space: pre;
+}
+
+p {
+	margin-top: 0em;
+}
+
+pre {
+	/* size and position */
+	display: inline-block;
+
+	/* text and font */
+	line-height: 1rem;
+
+	/* color */
+	color: #411112;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
